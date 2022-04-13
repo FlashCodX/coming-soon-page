@@ -1,0 +1,199 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    position: relative;
+    grid-template-columns: 60% 40%;
+}
+
+.leftContainer{
+    padding: 100px  !important;
+    position: relative;
+    padding: 50px;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.logoContainer{
+    height: 100%;
+}
+
+.leftContainer h1{
+    text-transform: uppercase;
+font-weight: 500;
+    font-size: 4.5rem;
+    max-width: 500px;
+}
+
+.leftContainer span{
+    font-weight: 300;
+    color: var(--desaturated-red);
+}
+
+.leftContainer p{
+    margin-top: 10px;
+    height: 100%;
+    color: var(--desaturated-red);
+    max-width: 400px;
+    line-height: 27px;
+    font-weight: 500;
+
+}
+
+
+.inputContainer {
+    min-width: 500px;
+    position: relative;
+display: flex;
+align-items: center;
+
+}
+
+.inputContainer > img{
+    position: absolute;
+    right: 80px
+}
+.errorLabel{
+    padding: 10px 15px;
+    color: var(--soft-red);
+}
+
+
+.inputContainer button{
+width: 100px;
+cursor: pointer;
+height: 60px;
+position: absolute;
+right:-40px;
+border-radius: 30px;
+border: none;
+background: var(--soft-red);
+
+}
+.inputContainer button:hover{
+background: var(--desaturated-red);
+
+}
+
+.inputContainer > input{
+   width: 100%;
+    border: 2px solid var(--soft-red);
+    border-radius: 30px;
+    padding: 20px 25px;
+    outline: none;
+    font-weight: 600;
+}
+
+.inputContainer > input::placeholder{
+    color: var(--desaturated-red);
+}
+
+
+.rightContainer{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.rightContainer > img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mobileLogo{
+    visibility: collapse;
+    display: none;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 3px;
+    display: flex;
+    width: fit-content;
+    font-size: 1rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 700;
+  }
+  .attribution *{
+    font-weight: 900 !important;
+
+    margin: auto 5px;
+  }
+  
+  .attribution a{
+    color: #00aa5b !important;
+    font-weight:900;
+    text-decoration: none;
+  }
+
+@media (max-width:768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+    .mobileLogo{
+        padding: 20px 50px;
+        display: block;
+        visibility: visible;
+    }
+
+    .rightContainer{
+        height: 300px;
+    }
+
+    .logoContainer{
+        display: none;
+        visibility: collapse;
+    }
+
+    .rightContainer > img{
+        object-fit: cover;
+        object-position: center;
+        content:url("../assets/hero-mobile.jpg")
+    }
+
+    .leftContainer {
+    margin-top: 0;
+    }
+
+    .leftContainer h1{
+        font-size: 3rem;
+        max-width: 200px;
+        margin: auto;
+    }
+
+    .leftContainer p{
+        margin: 0;
+    }
+
+    .inputContainer{
+    margin: 20px 0;
+    min-width: 400px
+    }
+
+.leftContainer{
+    text-align: center;
+}
+
+    .leftContainer{
+        width: 90%;
+        display: flex;
+        gap: 30px;
+        margin: auto;
+        margin-top: 30px;
+        padding: 0 !important;
+        order: 1;
+    }
+
+}
