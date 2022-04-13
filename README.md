@@ -4,7 +4,7 @@
 
 A challenge made for Frontend Mentor.
 
-> Check it out: [https://FlashCodX.github.io/coming-soon-app/](https://FlashCodX.github.io/coming-soon-app/)
+> Check it out: [https://FlashCodX.github.io/comming-soon-page/](https://FlashCodX.github.io/comming-soon-page/)
 
 ## Tech
 
